@@ -39,12 +39,30 @@ const events_json = [
   }
 ]
 
-const Event = props => (
-  <tr>
-    <th>{props.date}</th>
-    <th>{props.desc}</th>
-  </tr>
-)
+class Event extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      date: new Date(
+        props.date.split('/')[1]+'-'+
+        props.date.split('/')[0]+'-'+
+        props.date.split('/')[2]
+      )
+    }
+  }
+
+  render() {
+    console.log(this.state.date);
+    return (
+      <tr style={{textDecoration: this.state.date < new Date() ? 'line-through' : 'none'}}>
+        <th>{this.props.date}</th>
+        <th>{this.props.desc}</th>
+      </tr>
+    );
+  }
+}
 
 class Events extends React.Component {
 
