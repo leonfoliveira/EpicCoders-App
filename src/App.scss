@@ -34,27 +34,42 @@
     background-color: rgba(0,0,0,.2);
     text-align: center;
     padding-top: 200px;
-    img { transition: height 200ms; }
-    img:hover {
-      height: 310px;
+    img { 
+      transition: all 200ms;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
 
 section {
   padding: 50px;
+  opacity: 0;
+  transition: all 750ms;
+  &.active {
+    opacity: 1;
+  }
 }
 
 .img-box {
   margin-bottom: 20px;
   img {
     margin: 0 50px;
+    transition: all 200ms;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
 .dark {
   background-color: #000;
   color: #fff;
+}
+
+.text-box {
+  margin-top: 20px;
 }
 
 .member {
@@ -64,9 +79,10 @@ section {
     height: 150px;
     border-radius: 50%;
     margin: 15px auto;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
   }
-  h3 { font-size: 20px; }
-  h5 { font-size: 17px; }
+  h5 { font-size: 18px; }
+  h3 { font-size: 15px; }
 }
 
 .table tbody {
@@ -82,9 +98,10 @@ section {
 }
 
 footer {
-  background-color: #030303;
-  color: #555;
+  background-color: #000;
+  color: #777;
   text-align: center;
   font-size: 11px;
-  border-top: solid 1px #111;
+  line-height: 18px;
+  border-top: solid 1px #555;
 }

@@ -39,7 +39,7 @@ class FixedNavbar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
