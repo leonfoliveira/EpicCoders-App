@@ -29,6 +29,8 @@ class App extends React.Component {
     for (var i = 0; i < 5; i++) {
       if (window.pageYOffset + window.innerHeight > document.getElementById('sec'+i).offsetTop) {
         document.getElementById('sec'+i).classList.add("active");
+      } else {
+        document.getElementById('sec'+i).classList.remove("active");
       }
     }
   }
@@ -66,23 +68,23 @@ class App extends React.Component {
           </div>
         </section>
         <section className="dark text-center" id="sec1">
-          <h1>Sobre</h1>
+          <h1><span className="or">S</span>obre</h1>
           <p className="text-box">{about}</p>
         </section>
         <section id="sec2">
-          <h1 className="text-center">Membros</h1>
+          <h1 className="text-center"><span className="or">M</span>embros</h1>
           <div className="container">
             <Members></Members>
           </div>
         </section>
         <section className="dark text-center" id="sec3">
-          <h1>Calendário</h1>
+          <h1><span className="or">C</span>alendário</h1>
           <table className="table">
             <Events></Events>
           </table>        
         </section>
         <section className="text-center sponsor" id="sec4">
-          <h1>Patrocínio</h1>
+          <h1><span className="or">P</span>atrocínio</h1>
           <a href="http://www.b2ml.com.br/b2ml/">
             <img src={logo_b2ml} alt="b2ml"></img>
           </a>

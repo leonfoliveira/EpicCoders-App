@@ -56,7 +56,7 @@ class Event extends React.Component {
   render() {
     console.log(this.state.date);
     return (
-      <tr style={{textDecoration: this.state.date < new Date() ? 'line-through' : 'none'}}>
+      <tr className={this.state.date < new Date() ? 'passed' : 'active'}>
         <th>{this.props.date}</th>
         <th>{this.props.desc}</th>
       </tr>

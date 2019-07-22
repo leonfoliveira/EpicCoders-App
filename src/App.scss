@@ -43,6 +43,10 @@
   }
 }
 
+.or {
+  color: #f60;
+}
+
 section {
   padding: 50px;
   opacity: 0;
@@ -89,6 +93,10 @@ section {
   margin-top: 30px;
   display: inline-block;
   color: #fff;
+  .passed {
+    text-decoration: line-through;
+    color: #ccc;
+  }
 }
 
 .sponsor {
