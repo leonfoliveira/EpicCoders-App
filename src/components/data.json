@@ -1,0 +1,103 @@
+{
+  "type": "DataCollection",
+  "events": [
+    {
+      "date":"23/03/2019",
+      "desc":"1ª Seletiva para Maratona Mineira de Programação"
+    },
+    {
+      "date":"13/04/2019",
+      "desc":"2ª Seletiva para Maratona Mineira de Programação"
+    },
+    {
+      "date":"25/05/2019",
+      "desc":"Maratona Mineira de Programação"
+    },
+    {
+      "date":"25/05/2019",
+      "desc":"Epic Coders Cups"
+    },
+    {
+      "date":"10/08/2019",
+      "desc":"1ª Seletiva para Regional da Maratona de Programação"
+    },
+    {
+      "date":"31/08/2019",
+      "desc":"2ª Seletiva para Regional da Maratona de Programação"
+    },
+    {
+      "date":"14/09/2019",
+      "desc":"Regional da Maratona de Programação"
+    },
+    {
+      "date":"19/10/2019",
+      "desc":"Code Cup UNIFEI"
+    },
+    {
+      "date":"08/11/2019",
+      "desc":"Maratona de Programação"
+    }
+  ],
+  "members": [
+    {
+      "team":"[coach]",
+      "name":"Roberto Affonso"
+    },
+    {
+      "team":"[coach]",
+      "name":"Edmilson Moreira"
+    },
+    {
+      "team":"[coach]",
+      "name":"Júnior Andrade"
+    },
+    {
+      "team":"[EPIC Nuclear Guys]",
+      "name":"Felipe Kallás"
+    },
+    {
+      "team":"[EPIC Nuclear Guys]",
+      "name":"Marcos Antonio"
+    },
+    {
+      "team":"[EPIC Nuclear Guys]",
+      "name":"?"
+    },
+    {
+      "team":"[Time do Zeh]",
+      "name":"José Silva"
+    },
+    {
+      "team":"[Time do Zeh]",
+      "name":"David Batista"
+    },
+    {
+      "team":"[Time do Zeh]",
+      "name":"Tarik Moallen"
+    },
+    {
+      "team":"[.++]",
+      "name":"Leonardo Oliveira"
+    },
+    {
+      "team":"[.++]",
+      "name":"Eduardo Oliveira"
+    },
+    {
+      "team":"[.++]",
+      "name":"Dener Ribeiro"
+    },
+    {
+      "team":"[Troco Teammate por AC]",
+      "name":"Gustavo Guerra"
+    },
+    {
+      "team":"[Troco Teammate por AC]",
+      "name":"Edgar Almeida"
+    },
+    {
+      "team":"[Troco Teammate por AC]",
+      "name":"Ricardo Dalarme"
+    }
+  ]
+}
