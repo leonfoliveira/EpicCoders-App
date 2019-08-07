@@ -89,7 +89,7 @@ class App extends React.Component {
         <section className="dark text-center" id="sec3">
           <h1><span className="or">C</span>alendário</h1>
           <table className="table">
-            <EventList data={data} />
+            <EventList events={data.events} />
           </table>        
         </section>
         <section className="text-center sponsor" id="sec4">
