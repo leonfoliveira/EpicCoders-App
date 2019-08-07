@@ -1,30 +1,9 @@
 import React from 'react';
 
-import letras_epic from '../img/letras_epic.png';
+import NavbarLink from "./Link"
+import letras_epic from './letras_epic.png'
 
-class NavbarLink extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.onClickHandler = this.onClickHandler.bind(this);
-  }
-
-  onClickHandler(e) {
-    e.preventDefault();
-    document.getElementById(this.props.sec).scrollIntoView({behavior: 'smooth'});
-  }
-
-  render() {
-    return (
-      <a href="/" className="nav-item nav-link" onClick={this.onClickHandler}>
-        {this.props.text}
-      </a>
-    )
-  }
-}
-
-class FixedNavbar extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -73,4 +52,4 @@ class FixedNavbar extends React.Component {
   }
 }
 
-export default FixedNavbar;
+export default Navbar;

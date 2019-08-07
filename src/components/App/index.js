@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.scss';
+import './index.scss';
 
-import Members from './components/Members.component';
-import Events from './components/Events.component';
-import FixedNavbar from './components/FixedNavbar.component';
+import MemberList from '../Member/List';
+import EventList from '../Event/List';
+import Navbar from '../Navbar';
 
 import letras_epic from './img/letras_epic.png';
 import background_icpc from './img/background_icpc.jpg';
@@ -37,6 +37,8 @@ class App extends React.Component {
   }
 
   render() {
+    const { data } = this.props
+
     return (
       <div className="App">
         <div>
@@ -48,7 +50,7 @@ class App extends React.Component {
           <div className="navbar-shadow"></div>
         </div>
 
-        <FixedNavbar></FixedNavbar>
+        <Navbar />
 
         <div className="jumbotron" style={{backgroundImage: `url(${background_icpc})`}}>
           <div className="shadow">
@@ -81,13 +83,13 @@ class App extends React.Component {
         <section id="sec2">
           <h1 className="text-center"><span className="or">M</span>embros</h1>
           <div className="container">
-            <Members></Members>
+            <MemberList members={data.members} />
           </div>
         </section>
         <section className="dark text-center" id="sec3">
           <h1><span className="or">C</span>alendário</h1>
           <table className="table">
-            <Events></Events>
+            <EventList events={data.events} />
           </table>        
         </section>
         <section className="text-center sponsor" id="sec4">
