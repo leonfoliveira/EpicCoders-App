@@ -1,7 +1,7 @@
 import React from 'react';
 
 import NavbarLink from "./Link"
-import letras_epic from '../../img/letras_epic.png'
+import letras_epic from './letras_epic.png'
 
 class Navbar extends React.Component {
   constructor(props) {

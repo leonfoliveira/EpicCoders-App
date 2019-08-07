@@ -1,6 +1,6 @@
 import React from 'react'
 
-import image from '../../../img/user.jpg';
+import image from './img/user.jpg';
 
 const MemberItem = props => (
   <div className="col-sm-4 text-center">
