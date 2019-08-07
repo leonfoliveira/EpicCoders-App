@@ -1,7 +1,7 @@
 import React from 'react';
 
-import image from '../img/user.jpg';
-import data from './data.json';
+import image from '../../img/user.jpg';
+import data from '../../data.json';
 
 const Member = props => (
   <div className="col-sm-4 text-center">
