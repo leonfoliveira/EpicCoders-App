@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
 
-import Members from './components/Members.component';
-import Events from './components/Events.component';
-import FixedNavbar from './components/FixedNavbar.component';
+import Members from './components/Members';
+import Events from './components/Events';
+import FixedNavbar from './components/FixedNavbar';
 
 import letras_epic from './img/letras_epic.png';
 import background_icpc from './img/background_icpc.jpg';
