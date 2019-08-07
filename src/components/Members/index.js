@@ -1,7 +1,6 @@
 import React from 'react';
 
 import image from '../../img/user.jpg';
-import data from '../../data.json';
 
 const Member = props => (
   <div className="col-sm-4 text-center">
@@ -16,7 +15,7 @@ const Member = props => (
 class Members extends React.Component {
 
   getMembers = () => {
-    return data.members.map(function(curr, i) {
+    return this.props.data.members.map(function(curr, i) {
       return <Member team={curr.team} name={curr.name} key={i}></Member>
     })
   }

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import data from '../../data.json';
-
 class Event extends React.Component {
 
   constructor(props) {
@@ -30,7 +28,7 @@ class Event extends React.Component {
 class Events extends React.Component {
 
   getEvents = () => {
-    return data.events.map(function(curr, i) {
+    return this.props.data.events.map(function(curr, i) {
       return <Event date={curr.date} desc={curr.desc} key={i}></Event>
     })
   }

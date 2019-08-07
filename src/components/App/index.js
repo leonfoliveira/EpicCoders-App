@@ -37,6 +37,8 @@ class App extends React.Component {
   }
 
   render() {
+    const { data } = this.props
+
     return (
       <div className="App">
         <div>
@@ -81,13 +83,13 @@ class App extends React.Component {
         <section id="sec2">
           <h1 className="text-center"><span className="or">M</span>embros</h1>
           <div className="container">
-            <Members></Members>
+            <Members data={data}></Members>
           </div>
         </section>
         <section className="dark text-center" id="sec3">
           <h1><span className="or">C</span>alendário</h1>
           <table className="table">
-            <Events></Events>
+            <Events data={data}></Events>
           </table>        
         </section>
         <section className="text-center sponsor" id="sec4">
