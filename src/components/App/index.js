@@ -2,7 +2,7 @@ import React from 'react';
 import './index.scss';
 
 import Members from '../Members';
-import Events from '../Events';
+import EventList from '../Event/List';
 import FixedNavbar from '../FixedNavbar';
 
 import letras_epic from '../../img/letras_epic.png';
@@ -89,7 +89,7 @@ class App extends React.Component {
         <section className="dark text-center" id="sec3">
           <h1><span className="or">C</span>alendário</h1>
           <table className="table">
-            <Events data={data}></Events>
+            <EventList data={data}></EventList>
           </table>        
         </section>
         <section className="text-center sponsor" id="sec4">
