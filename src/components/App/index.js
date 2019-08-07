@@ -83,7 +83,7 @@ class App extends React.Component {
         <section id="sec2">
           <h1 className="text-center"><span className="or">M</span>embros</h1>
           <div className="container">
-            <MemberList data={data} />
+            <MemberList members={data.members} />
           </div>
         </section>
         <section className="dark text-center" id="sec3">
