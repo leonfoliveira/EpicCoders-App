@@ -9,7 +9,14 @@ class NavbarLink extends React.Component {
 
   onClickHandler(e) {
     e.preventDefault();
-    document.getElementById(this.props.sec).scrollIntoView({behavior: 'smooth'});
+    const yourElement = document.getElementById(this.props.sec);
+    const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -30;
+
+    window.scrollTo({
+        top: yCoordinate + yOffset,
+        behavior: 'smooth'
+    });
   }
 
   render() {

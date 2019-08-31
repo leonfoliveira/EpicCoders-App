@@ -14,7 +14,7 @@ import logo_mineira from './img/logo_mineira.png';
 import logo_b2ml from './img/logo_b2ml.png';
 import logo_unifei from './img/logo_unifei.png';
 
-let about = "A competição de programação, é uma prova de 5 horas, com 8 a 14 problemas para serem resolvidos. Existem 4 competições de programação que a UNIFEI vem participando. A principal é a Maratona de Programação. Ela é dividida em 3 fases no Brasil. A primeira é uma competição regional, realizada sempre em setembro de cada ano, em uma sede em cidade próxima a Itajubá. Essa etapa, através das regras criadas pela organização, classifica para a fase final brasileira ou regional da América Latina. As equipes que passarem na primeira fase, geralmente em torno de 60 a 70 equipes do Brasil inteiro, se reúnem em novembro em uma cidade pré-definida para disputarem uma das 5 ou 6 vagas para a etapa Mundial. O Mundial é em um país e cidade pré-definida e ocorre em maio do ano seguinte.";
+let about = "A competição de programação, é uma prova de 5 horas, com 8 a 14 problemas para serem resolvidos. Existem 4 competições de programação que a UNIFEI vem participando. A principal é a Maratona de Programação. Ela é dividida em 3 fases no Brasil. A primeira é uma competição regional, realizada sempre em setembro de cada ano, em uma sede em cidade próxima a Itajubá. Essa etapa, através das regras criadas pela organização, classifica para a fase final brasileira ou regional da América Latina. As equipes que passarem na primeira fase, geralmente em torno de 60 a 70 equipes do Brasil inteiro, se reúnem em novembro em uma cidade pré-definida para disputarem uma das 5 ou 6 vagas para a etapa Mundial. O Mundial é em um país e cidade pré-definida e ocorre em maio do ano seguinte. A outra competição em importância para os alunos, e em equipe ainda, é a Maratona Mineira de Programação. Ela ocorre geralmente na ultima semana de maio em uma cidade pré-definida. São 50 a 70 equipes de toda Minas Gerais, que disputam o titulo de Campeão Mineiro. A prova serve de preparação para a Maratona de Programação Nacional.";
 
 class App extends React.Component {
 
@@ -100,8 +100,8 @@ class App extends React.Component {
         </section>
 
         <footer>
-          Leonardo F Oliveira @ 2019
-        </footer>      
+          Epic Coders @ 2019
+        </footer>
       </div>
     );
   }
