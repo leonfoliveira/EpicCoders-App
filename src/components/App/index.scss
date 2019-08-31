@@ -21,6 +21,13 @@
     transition: all 200ms ease-out;
     transform: translate(0, -100%);
   }
+  #logo-unifei {
+    margin-top: 50px;
+    transition: transform 100ms;
+  }
+  #logo-unifei:hover {
+    transform: scale(1.1);
+  }
 }
 
 .jumbotron {
@@ -31,7 +38,7 @@
   border-radius: 0;
   .shadow {
     height: 100%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.3);
     text-align: center;
     padding-top: 200px;
     img { 

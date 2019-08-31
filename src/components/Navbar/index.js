@@ -2,6 +2,7 @@ import React from 'react';
 
 import NavbarLink from "./Link"
 import letras_epic from './letras_epic.png'
+import logo_unifei from './logo_unifei.png';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -47,6 +48,10 @@ class Navbar extends React.Component {
                 <NavbarLink sec="sec4" text="Patrocínio"></NavbarLink>
             </div>
         </div>
+
+        <a href="https://unifei.edu.br">
+          <img src={logo_unifei} alt="Logo UNIFEI" height='92' id="logo-unifei"></img>
+        </a>
       </nav>
     )
   }
