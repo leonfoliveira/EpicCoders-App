@@ -43,7 +43,7 @@ class Navbar extends React.Component {
             <div className="navbar-nav">
                 <NavbarLink sec="sec0" text="Home"></NavbarLink>
                 <NavbarLink sec="sec1" text="Sobre"></NavbarLink>
-                <NavbarLink sec="sec2" text="Membros"></NavbarLink>
+                <NavbarLink sec="sec2" text="Equipes"></NavbarLink>
                 <NavbarLink sec="sec3" text="Calendário"></NavbarLink>
                 <NavbarLink sec="sec4" text="Patrocínio"></NavbarLink>
             </div>

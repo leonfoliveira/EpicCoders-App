@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-import MemberList from '../Member/List';
+import TeamList from '../Team/List';
 import EventList from '../Event/List';
 import Navbar from '../Navbar';
 
@@ -80,9 +80,9 @@ class App extends React.Component {
           <p className="text-box">{about}</p>
         </section>
         <section id="sec2">
-          <h1 className="text-center"><span className="or">M</span>embros</h1>
-          <div className="container">
-            <MemberList members={data.members} />
+          <h1 className="text-center"><span className="or">E</span>quipes</h1>
+          <div className="container" style={{marginTop: 30}}>
+            <TeamList teams={data.teams}></TeamList>
           </div>
         </section>
         <section className="dark text-center" id="sec3">

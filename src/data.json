@@ -37,7 +37,7 @@
       "date":"08/11/2019",
       "desc":"Maratona de Programação"
     }
-  ],
+  ],  
   "members": [
     {
       "team":"[coach]",
@@ -98,6 +98,44 @@
     {
       "team":"[Troco Teammate por AC]",
       "name":"Dilson Pieve"
+    }
+  ],
+  "teams": [
+    {
+      "name": "EPIC Nuclear",
+      "src": "epic.jpg",
+      "members": [
+        "Felipe Kallás",
+        "Júnior Andrade",
+        "Marcos Antonio"
+      ]
+    },
+    {
+      "name": "Time do Zeh",
+      "src": "zeh.jpg",
+      "members": [
+        "David Batista",
+        "José Silva",
+        "Tarik Moallen"
+      ]
+    },
+    {
+      "name": ".++",
+      "src": "pmm.jpg",
+      "members": [
+        "Eduardo Oliveira",
+        "Dener Ribeiro",
+        "Leonardo Oliveira"
+      ]
+    },
+    {
+      "name": "Troco Teammate por AC",
+      "src": "teammate.jpg",
+      "members": [
+        "Dilson Pieve",
+        "Edgar Almeida",
+        "Gustavo Guerra"
+      ]
     }
   ]
 }

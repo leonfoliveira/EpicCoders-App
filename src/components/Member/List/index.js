@@ -5,8 +5,8 @@ const MemberList = ({ members }) => (
   <div className="row">
     {members.map((curr, i) =>
       <MemberItem 
-        team={curr.team} 
-        name={curr.name} 
+        team={curr.team}
+        name={curr.name}
         key={i} 
       />
     )}
