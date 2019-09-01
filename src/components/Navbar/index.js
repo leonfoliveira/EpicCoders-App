@@ -49,7 +49,7 @@ class Navbar extends React.Component {
             </div>
         </div>
 
-        <a href="https://unifei.edu.br" target="_blank">
+        <a href="https://unifei.edu.br" target="_blank" rel="noopener noreferrer">
           <img src={logo_unifei} alt="Logo UNIFEI" height='92' id="logo-unifei"></img>
         </a>
       </nav>

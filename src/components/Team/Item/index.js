@@ -1,7 +1,5 @@
 import React from 'react'
 
-import image from './img/epic.jpg';
-
 const TeamItem = ({name, src, members, i}) => {
 
   let img = (
