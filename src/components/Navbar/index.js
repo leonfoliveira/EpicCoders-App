@@ -31,7 +31,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className={"navbar navbar-expand-lg fixed-top "+(this.state.visible ? "active" : "hidden")} id="navbar-fixed">
+      <nav className={"navbar navbar-expand-md fixed-top "+(this.state.visible ? "active" : "hidden")} id="navbar-fixed">
         <a className="navbar-brand" href="/">
           <img src={letras_epic} alt="EPIC" height='20'></img>
         </a>

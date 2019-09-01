@@ -60,17 +60,17 @@ class App extends React.Component {
         </div>
         <section className="text-center" id="sec0">
           <div className="row img-box">
-            <div className="col-lg text-right">
+            <div className="col-md text-right">
               <a href="https://icpc.baylor.edu/" target="_blank" rel="noopener noreferrer">
                 <img src={logo_icpc} alt="Logo ICPC" height='125' style={{marginTop: 12}}></img>
               </a>
             </div>
-            <div className="col-lg">
+            <div className="col-md">
               <a href="http://maratona.ime.usp.br/" target="_blank" rel="noopener noreferrer">
                 <img src={logo_mdp} alt="Logo Maratona de Programação" height='150'></img>
               </a>
             </div>
-            <div className="col-lg text-left">
+            <div className="col-md text-left">
               <a href="https://maratona.algartelecom.com.br/portal/mineira/" target="_blank" rel="noopener noreferrer">
                 <img src={logo_mineira} alt="Logo Mineira de Programação" height='150'></img>
               </a>
