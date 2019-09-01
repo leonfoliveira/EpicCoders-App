@@ -8,7 +8,8 @@ class NavbarLink extends React.Component {
   }
 
   onClickHandler(e) {
-    e.preventDefault();
+    e.preventDefault();  
+    
     const yourElement = document.getElementById(this.props.sec);
     const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -30;

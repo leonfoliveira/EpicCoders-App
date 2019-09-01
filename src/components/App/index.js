@@ -44,9 +44,9 @@ class App extends React.Component {
       <div className="App">
         <div>
           <nav className="navbar navbar-expand-lg" id="navbar-nofixed">
-            <a className="navbar-brand" href="/">
+            <p className="navbar-brand">
               <img src={letras_epic} alt="EPIC" height='40'></img>
-            </a>
+            </p>
           </nav>
           <div className="navbar-shadow"></div>
         </div>
