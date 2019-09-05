@@ -1,6 +1,7 @@
 ## About
 
-A frontend application for UNIFEI Epic Coders competitive programming team web page.
+A frontend application for UNIFEI Epic Coders competitive programming study group web page.
+Available at https://maratona.unifei.edu.br/.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
