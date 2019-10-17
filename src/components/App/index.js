@@ -48,9 +48,10 @@ export default function App ({ data }) {
 
       <div className="jumbotron" style={{backgroundImage: `url(${background_icpc})`}}>
         <div className="shadow">
-          <img src={logo_epic} alt="Logo EPIC" height='300' style={{zIndex: 2}}></img>
+          <img src={logo_epic} alt="Logo EPIC" style={{zIndex: 2}}></img>
         </div>
       </div>
+
       <section className="text-center" id="sec0">
         <div className="row img-box">
           <div className="col-md text-right">
