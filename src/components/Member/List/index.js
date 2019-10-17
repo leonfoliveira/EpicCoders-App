@@ -1,6 +1,8 @@
 import React from 'react';
 import MemberItem from '../Item'
 
+import './style.scss';
+
 export default function MemberList ({ members }) {
   return (
     <div className="row">

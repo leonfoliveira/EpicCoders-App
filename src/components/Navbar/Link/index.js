@@ -1,5 +1,7 @@
 import React from "react"
 
+import './style.scss';
+
 export default function NavbarLink ({ sec, text }) {
 
   const clickHandler = (e) => {

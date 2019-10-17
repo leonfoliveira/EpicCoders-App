@@ -1,0 +1,39 @@
+#navbar-nofixed {
+  color: #fff;
+  height: 75px;
+  background: rgba(0,0,0,0.95);
+  box-shadow: 0 0 30px 15px #000;
+  .navbar-brand {
+    margin: auto;
+  }
+}
+
+#navbar-fixed {
+  background: rgba(0,0,0,0.95);
+  color: #fff;
+  height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 200ms ease-in;
+  .collapse, .navbar-nav {
+    height: 100%;
+  }  
+  &.hidden {
+    visibility: hidden;
+    transition: all 200ms ease-out;
+    transform: translate(0, -100%);
+  }
+  #logo-unifei {
+    margin-top: 50px;
+    transition: transform 100ms;
+  }
+  #logo-unifei:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 767px) {
+  #navbar-fixed {
+    display: none;
+  }
+}

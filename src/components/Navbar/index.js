@@ -3,6 +3,8 @@ import React, {
   useEffect
 } from 'react';
 
+import './style.scss';
+
 import NavbarLink from "./Link"
 import letras_epic from '../../img/letras_epic.png'
 import logo_unifei from '../../img/logo_unifei.png';

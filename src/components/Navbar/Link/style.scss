@@ -1,0 +1,10 @@
+.nav-link {
+  color: #fff;
+  line-height: 44px;
+  transition: all 100ms;
+  &.hover {
+    box-shadow: inset 0 -3px 0 0 #f60;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

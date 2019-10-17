@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './index.scss';
+import './style.scss';
 
 import TeamList from '../Team/List';
 import CalendarList from '../Calendar/List';
