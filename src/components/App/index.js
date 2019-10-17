@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './index.scss';
 
 import TeamList from '../Team/List';
-import EventList from '../Event/List';
+import CalendarList from '../Calendar/List';
 import Navbar from '../Navbar';
 
 import letras_epic from '../../img/letras_epic.png';
@@ -83,7 +83,7 @@ export default function App ({ data }) {
       <section className="dark text-center" id="sec3">
         <h1><span className="or">C</span>alendário</h1>
         <table className="table">
-          <EventList events={data.events} />
+          <CalendarList events={data.events} />
         </table>        
       </section>
       <section className="text-center sponsor" id="sec4">

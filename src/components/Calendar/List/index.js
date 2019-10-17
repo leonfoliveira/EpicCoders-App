@@ -1,7 +1,7 @@
 import React from 'react';
 import EventItem from "../Item"
 
-export default function EventList ({ events }) {
+export default function CalendarList ({ events }) {
   return (
     <tbody>
       {
