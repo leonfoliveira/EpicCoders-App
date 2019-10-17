@@ -10,14 +10,27 @@ export default function CalendarList ({ events }) {
 
   useEffect(() => {
     const fetchToday = async () => {
-      let response = await fetch('http://worldclockapi.com/api/json/est/now');
-      let data = await response.json();
+      try {
+        let response = await fetch('http://worldclockapi.com/api/json/est/now');
+        if (response.status !== 200) {
+          setToday(new Date());
+          return;
+        }
 
-      setToday(new Date(data.currentDateTime));
+        let data = await response.json();
+        if (data.currentDateTime === null) {
+          setToday(new Date());
+          return;
+        }
+
+        setToday(new Date(data.currentDateTime));
+      } catch (err) {
+        setToday(new Date());
+      }
     }
 
     fetchToday();
-  })
+  }, []);
 
   return (
     <tbody>
