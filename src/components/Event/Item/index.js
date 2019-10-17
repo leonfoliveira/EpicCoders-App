@@ -1,6 +1,6 @@
 import React from "react"
 
-function EventItem({ date, desc }) {
+export default function EventItem({ date, desc }) {
   const normalizedDate = new Date(
     date.split('/')[1]+'-'+
     date.split('/')[0]+'-'+
@@ -14,5 +14,3 @@ function EventItem({ date, desc }) {
     </tr>
   );
 }
-
-export default EventItem
