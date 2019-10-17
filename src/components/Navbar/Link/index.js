@@ -1,14 +1,9 @@
 import React from "react"
 
-class NavbarLink extends React.Component {
-  constructor(props) {
-    super(props);
+export default function NavbarLink ({ text }) {
 
-    this.onClickHandler = this.onClickHandler.bind(this);
-  }
-
-  onClickHandler(e) {
-    e.preventDefault();  
+  const clickHandler = (e) => {
+    e.preventDefault();
     
     const yourElement = document.getElementById(this.props.sec);
     const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
@@ -20,13 +15,9 @@ class NavbarLink extends React.Component {
     });
   }
 
-  render() {
-    return (
-      <a href="/" className="nav-item nav-link" onClick={this.onClickHandler}>
-        {this.props.text}
-      </a>
-    )
-  }
+  return (
+    <a href="/" className="nav-item nav-link" onClick={clickHandler}>
+      {text}
+    </a>
+  )
 }
-
-export default NavbarLink
