@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-export default function CalendarItem ({ date, desc }) {
+export default function CalendarItem ({ date, today, desc }) {
   const normalizedDate = new Date(
     date.split('/')[1]+'-'+
     date.split('/')[0]+'-'+
@@ -8,7 +8,7 @@ export default function CalendarItem ({ date, desc }) {
   )
 
   return (
-    <tr className={normalizedDate < new Date() ? 'passed' : 'active'}>
+    <tr className={normalizedDate < today ? 'passed' : 'active'}>
       <th>{date}</th>
       <th>{desc}</th>
     </tr>
