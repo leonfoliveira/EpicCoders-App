@@ -7,8 +7,8 @@ export default function NavbarLink ({ sec, text }) {
   const clickHandler = (e) => {
     e.preventDefault();
     
-    const yourElement = document.getElementById(sec);
-    const yCoordinate = yourElement.getBoundingClientRect().top + window.pageYOffset;
+    const element = document.getElementById(sec);
+    const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -30;
 
     window.scrollTo({

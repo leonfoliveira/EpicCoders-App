@@ -33,6 +33,24 @@ export default function App ({ data }) {
     }
   }
 
+  const arrowAnimationHandleOn = (e) => {
+    document.getElementById('arrow-box').className = 'arrow-animate';
+  }
+  const arrowAnimationHandleOff = (e) => {
+    document.getElementById('arrow-box').className = '';
+  }
+
+  const arrowClickHandle = (e) => {
+    const element = document.getElementById('sec0');
+    const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -30;
+
+    window.scrollTo({
+        top: yCoordinate + yOffset,
+        behavior: 'smooth'
+    });
+  }
+
   return (
     <div className="App">
       <div>
@@ -49,6 +67,16 @@ export default function App ({ data }) {
       <div className="jumbotron" style={{backgroundImage: `url(${background_icpc})`}}>
         <div className="shadow">
           <img src={logo_epic} alt="Logo EPIC" style={{zIndex: 2}}></img>
+          <div 
+            className="btn-down" 
+            onClick={arrowClickHandle}
+            onMouseEnter={arrowAnimationHandleOn}
+            onMouseLeave={arrowAnimationHandleOff}
+          >
+            <div id="arrow-box">
+              <i className="arrow-down"></i>
+            </div> 
+          </div>
         </div>
       </div>
 

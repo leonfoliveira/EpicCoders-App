@@ -21,6 +21,38 @@
       }
     }
   }
+  .btn-down {
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    line-height: 75px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.8));
+    &:hover {
+      background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.85));
+    }
+    .arrow-animate {
+      animation: arrow-animation 600ms alternate infinite;
+    }
+    .arrow-down {
+      border: solid rgba(255,255,255,.5);
+      border-width: 0 10px 10px 0;
+      display: inline-block;
+      padding: 10px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 .or {
