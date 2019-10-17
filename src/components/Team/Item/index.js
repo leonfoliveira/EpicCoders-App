@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TeamItem = ({name, src, members, i}) => {
+export default function TeamItem ({name, src, members, i}) {
 
   let img = (
     <div className={"col-md-6" + (i & 1 ? " text-left" : " text-right")}>
@@ -12,9 +12,9 @@ const TeamItem = ({name, src, members, i}) => {
     <div className={"col-md-6" + (i & 1 ? " text-right" : "")}>
       <h1 className="team-name">{name}</h1>
       <ul className="member-list">
-        {members.map((curr, i) =>
-          <li key={i}>{curr}</li>
-        )}
+        {
+          members.map((curr, i) => <li key={i}>{curr}</li>)
+        }
       </ul>
     </div>
   );
@@ -26,5 +26,3 @@ const TeamItem = ({name, src, members, i}) => {
     </div>
   );
 }
-
-export default TeamItem;
