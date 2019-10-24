@@ -43,7 +43,7 @@ export default function App ({ data }) {
   const arrowClickHandle = (e) => {
     const element = document.getElementById('sec0');
     const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -30;
+    const yOffset = document.body.offsetWidth < 767 ? 0 : -75;
 
     window.scrollTo({
         top: yCoordinate + yOffset,
