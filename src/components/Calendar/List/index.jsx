@@ -1,23 +1,24 @@
 import React, {
   useState,
-  useEffect
+  useEffect,
 } from 'react';
-import EventItem from "../Item"
+import PropTypes from 'prop-types';
 
-export default function CalendarList ({ events }) {
-  
-  const [ today, setToday ] = useState();
+import EventItem from '../Item';
+
+export default function CalendarList({ events }) {
+  const [today, setToday] = useState();
 
   useEffect(() => {
     const fetchToday = async () => {
       try {
-        let response = await fetch('http://worldclockapi.com/api/json/est/now');
+        const response = await fetch('http://worldclockapi.com/api/json/est/now');
         if (response.status !== 200) {
           setToday(new Date());
           return;
         }
 
-        let data = await response.json();
+        const data = await response.json();
         if (data.currentDateTime === null) {
           setToday(new Date());
           return;
@@ -27,7 +28,7 @@ export default function CalendarList ({ events }) {
       } catch (err) {
         setToday(new Date());
       }
-    }
+    };
 
     fetchToday();
   }, []);
@@ -35,15 +36,23 @@ export default function CalendarList ({ events }) {
   return (
     <tbody>
       {
-        events.map((curr, i) => 
-          <EventItem 
+        events.map((curr) => (
+          <EventItem
             date={curr.date}
             today={today}
             desc={curr.desc}
-            key={i}
+            key={curr.id}
           />
-        )
+        ))
       }
     </tbody>
   );
 }
+
+CalendarList.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    date: PropTypes.instanceOf(Date),
+    desc: PropTypes.string,
+  })).isRequired,
+};
