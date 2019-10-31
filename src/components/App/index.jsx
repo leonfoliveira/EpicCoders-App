@@ -102,34 +102,30 @@ export default function App({ data }) {
         </div>
       </section>
       <section className="dark text-center" id="sec1">
-        <h1>
-          <span className="or">S</span>
-          obre
+        <h1 className="section-title">
+          Sobre
         </h1>
         <p className="text-box">{about}</p>
       </section>
       <section id="sec2">
-        <h1 className="text-center">
-          <span className="or">E</span>
-          quipes
+        <h1 className="section-title text-center">
+          Equipes
         </h1>
         <div className="container" style={{ marginTop: 30 }}>
           <TeamList teams={data.teams} />
         </div>
       </section>
       <section className="dark text-center" id="sec3">
-        <h1>
-          <span className="or">C</span>
-          alendário
+        <h1 className="section-title">
+          Calendário
         </h1>
         <table className="table">
           <CalendarList events={data.events} />
         </table>
       </section>
       <section className="text-center sponsor" id="sec4">
-        <h1>
-          <span className="or">P</span>
-          atrocínio
+        <h1 className="section-title">
+          Patrocínio
         </h1>
         <a href="http://www.b2ml.com.br/b2ml/" target="_blank" rel="noopener noreferrer">
           <img src={logoB2ML} alt="b2ml" />

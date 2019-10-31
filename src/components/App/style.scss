@@ -62,10 +62,6 @@
   }
 }
 
-.or {
-  color: #f60;
-}
-
 section {
   padding: 50px;
   opacity: 0;
@@ -73,6 +69,10 @@ section {
   &.active {
     opacity: 1;
   }
+}
+
+.section-title::first-letter {
+  color: #f60;
 }
 
 .img-box {
