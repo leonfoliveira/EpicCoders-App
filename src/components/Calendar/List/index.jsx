@@ -4,13 +4,13 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 
-import EventItem from '../Item';
+import CalendarItem from '../Item';
 
 export default function CalendarList({ events }) {
-  const [today, setToday] = useState();
+  const [today, setToday] = useState(new Date());
 
   useEffect(() => {
-    const fetchToday = async () => {
+    (async () => {
       try {
         const response = await fetch('http://worldclockapi.com/api/json/est/now');
         if (response.status !== 200) {
@@ -28,16 +28,14 @@ export default function CalendarList({ events }) {
       } catch (err) {
         setToday(new Date());
       }
-    };
-
-    fetchToday();
-  }, []);
+    })();
+  }, [events]);
 
   return (
     <tbody>
       {
         events.map((curr) => (
-          <EventItem
+          <CalendarItem
             date={curr.date}
             today={today}
             desc={curr.desc}
@@ -50,9 +48,5 @@ export default function CalendarList({ events }) {
 }
 
 CalendarList.propTypes = {
-  events: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
-    date: PropTypes.instanceOf(Date),
-    desc: PropTypes.string,
-  })).isRequired,
+  events: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

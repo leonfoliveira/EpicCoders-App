@@ -2,167 +2,90 @@
   "type": "DataCollection",
   "events": [
     {
-      "id":0,
+      "id": 0,
       "date":"23/03/2019",
       "desc":"1ª Seletiva para Maratona Mineira de Programação"
     },
     {
-      "id":1,
+      "id": 1,
       "date":"13/04/2019",
       "desc":"2ª Seletiva para Maratona Mineira de Programação"
     },
     {
-      "id":2,
+      "id": 2,
       "date":"25/05/2019",
       "desc":"Maratona Mineira de Programação"
     },
     {
-      "id":3,
+      "id": 3,
       "date":"25/05/2019",
       "desc":"Epic Coders Cups"
     },
     {
-      "id":4,
+      "id": 4,
       "date":"10/08/2019",
       "desc":"1ª Seletiva para Regional da Maratona de Programação"
     },
     {
-      "id":5,
+      "id": 5,
       "date":"31/08/2019",
       "desc":"2ª Seletiva para Regional da Maratona de Programação"
     },
     {
-      "id":6,
+      "id": 6,
       "date":"14/09/2019",
       "desc":"Regional da Maratona de Programação"
     },
     {
-      "id":7,
+      "id": 7,
       "date":"19/10/2019",
       "desc":"Code Cup UNIFEI"
     },
     {
-      "id":8,
+      "id": 8,
       "date":"08/11/2019",
       "desc":"Maratona de Programação"
-    }
-  ],  
-  "members": [
-    {
-      "id":0,
-      "team":"[coach]",
-      "name":"Roberto Affonso"
-    },
-    {
-      "id":1,
-      "team":"[coach]",
-      "name":"Edmilson Moreira"
-    },
-    {
-      "id":2,
-      "team":"[coach]",
-      "name":"Júnior Andrade"
-    },
-    {
-      "id":3,
-      "team":"[EPIC Nuclear Guys]",
-      "name":"Felipe Kallás"
-    },
-    {
-      "id":4,
-      "team":"[EPIC Nuclear Guys]",
-      "name":"Marcos Antonio"
-    },
-    {
-      "id":5,
-      "team":"[EPIC Nuclear Guys]",
-      "name":"Júnior Andrade"
-    },
-    {
-      "id":6,
-      "team":"[Time do Zeh]",
-      "name":"José Silva"
-    },
-    {
-      "id":7,
-      "team":"[Time do Zeh]",
-      "name":"David Batista"
-    },
-    {
-      "id":8,
-      "team":"[Time do Zeh]",
-      "name":"Tarik Moallen"
-    },
-    {
-      "id":9,
-      "team":"[.++]",
-      "name":"Leonardo Oliveira"
-    },
-    {
-      "id":10,
-      "team":"[.++]",
-      "name":"Eduardo Oliveira"
-    },
-    {
-      "id":11,
-      "team":"[.++]",
-      "name":"Dener Ribeiro"
-    },
-    {
-      "id":12,
-      "team":"[Troco Teammate por AC]",
-      "name":"Gustavo Guerra"
-    },
-    {
-      "id":13,
-      "team":"[Troco Teammate por AC]",
-      "name":"Edgar Almeida"
-    },
-    {
-      "id":14,
-      "team":"[Troco Teammate por AC]",
-      "name":"Dilson Pieve"
     }
   ],
   "teams": [
     {
-      "id":0,
+      "id": 0,
       "name": "EPIC Nuclear Guys",
       "src": "epic.jpg",
       "members": [
-        "Júnior Andrade",
-        "Felipe Kallás",
-        "Marcos Antonio"
+        {"id": 0, "name": "Júnior Andrade"},
+        {"id": 1, "name": "Felipe Kallás"},
+        {"id": 2, "name": "Marcos Antonio"}
       ]
     },
     {
-      "id":1,
+      "id": 1,
       "name": "Time do Zeh",
       "src": "zeh.jpg",
       "members": [
-        "David Batista",
-        "José Silva",
-        "Tarik Moallen"
+        {"id": 3, "name": "David Batista"},
+        {"id": 4, "name": "José Silva"},
+        {"id": 5, "name": "Tarik Moallen"}
       ]
     },
     {
-      "id":2,
+      "id": 2,
       "name": ".++",
       "src": "pmm.jpg",
       "members": [
-        "Leonardo Oliveira",
-        "Eduardo Oliveira",
-        "Dener Ribeiro"
+        {"id": 6, "name": "Leonardo Oliveira"},
+        {"id": 7, "name": "Eduardo Oliveira"},
+        {"id": 8, "name": "Dener Ribeiro"}
       ]
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Troco Teammate por AC",
       "src": "teammate.jpg",
       "members": [
-        "Ricardo Dalarme",
-        "Edgar Almeida",
-        "Gustavo Guerra"
+        {"id": 9, "name": "Ricardo Dalarme"},
+        {"id": 10, "name": "Edgar Almeida"},
+        {"id": 11, "name": "Gustavo Guerra"}
       ]
     }
   ]

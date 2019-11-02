@@ -15,7 +15,7 @@ export default function TeamItem({
       <h1 className="team-name">{name}</h1>
       <ul className="member-list">
         {
-          members.map((curr) => <li key={curr.id}>{curr}</li>)
+          members.map((curr) => <li key={curr.id}>{curr.name}</li>)
         }
       </ul>
     </div>
@@ -32,6 +32,6 @@ export default function TeamItem({
 TeamItem.propTypes = {
   name: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
-  members: PropTypes.arrayOf(PropTypes.string).isRequired,
+  members: PropTypes.arrayOf(PropTypes.object).isRequired,
   id: PropTypes.number.isRequired,
 };

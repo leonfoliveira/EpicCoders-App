@@ -27,7 +27,7 @@ TeamList.propTypes = {
   teams: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
-    members: PropTypes.arrayOf(PropTypes.string).isRequired,
+    members: PropTypes.arrayOf(PropTypes.object).isRequired,
     id: PropTypes.number.isRequired,
   })).isRequired,
 };
