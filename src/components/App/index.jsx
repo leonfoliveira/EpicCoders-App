@@ -139,9 +139,6 @@ export default function App({ data }) {
       <a href="https://pt-br.facebook.com/maratonaunifei/" target="_blank" rel="noopener noreferrer" className="fb-link">
         <img src={logoFB} alt="Facebook Page" height="50px" />
       </a>
-      <a href="https://github.com/leonfoliveira/EpicCoders-App" target="_blank" rel="noopener noreferrer" className="github-link">
-        <img src={logoGit} alt="GitHub Project" height="50px" />
-      </a>
     </div>
   );
 }
