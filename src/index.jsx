@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import data from './data.json'
+import data from './data.json';
 
 ReactDOM.render(<App data={data} />, document.getElementById('root'));
 

@@ -1,0 +1,175 @@
+body {
+  margin-top: 100vh;
+}
+
+.navbar-brand {
+  max-width: 100%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.jumbotron {
+  //margin-top: -75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  //height: 100vh;
+  background-size: cover;
+  padding: 0;
+  border-radius: 0;
+  background-attachment: fixed;
+  .shadow {
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;      
+      transform: translate(-50%, -50%);
+      transition: all 100ms;
+      height: 50vh;
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+  }
+  .btn-down {
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    line-height: 75px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.8));
+    &:hover {
+      background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.85));
+    }
+    .arrow-animate {
+      animation: arrow-animation 600ms alternate infinite;
+    }
+    .arrow-down {
+      border: solid rgba(255,255,255,.5);
+      border-width: 0 10px 10px 0;
+      display: inline-block;
+      padding: 10px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+section {
+  padding: 50px;
+  opacity: 0;
+  transition: all 750ms;
+  &.active {
+    opacity: 1;
+  }
+}
+
+.section-title::first-letter {
+  color: #f60;
+}
+
+.img-box {
+  padding-bottom: 20px;
+  img {
+    transition: all 200ms;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .img-box {
+    div {
+      margin: 10px 0;
+      text-align: center!important;
+    }
+  }
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.text-box {
+  margin-top: 20px;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 30px;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team {
+    img {
+      margin-bottom: 10px;
+      width: 100%!important;
+    }
+    div {
+      text-align: center!important;
+    }
+  }
+}
+
+.table tbody {
+  margin-top: 30px;
+  display: inline-block;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  .passed {
+    text-decoration: line-through;
+    color: #777;
+  }
+}
+
+.sponsor {
+  img {
+    margin-top: 30px;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #777;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  border-top: solid 1px #555;
+}
+
+.fb-link {
+  position: fixed;  
+  bottom: 10px;
+  right: 10px;
+}
+
+.fb-link, .github-link {
+  transition: all 100ms;
+  &:hover {
+    transform: translate(-10px, 0);
+  }
+}
